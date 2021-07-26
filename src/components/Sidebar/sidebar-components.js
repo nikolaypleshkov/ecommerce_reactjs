@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../Navbar/navbar-component';
-import './Sidebar.scss'
+import './Sidebar.css'
 const sideMenu = document.getElementsByTagName('aside');
 
 function MouseOver(e) {
@@ -28,10 +28,8 @@ export default class Sidebar extends Component {
      return (
         <aside className="sidebar" id="toggleThat">
             <div className="navlink-site-container">
-                <div className="mb-header">
-                    <h1>Меню</h1>
-                </div>
-                <hr />
+
+         
                 <ul className="navlinks-site-main">
                     <li className="navlink thover active" >
                         <a href="#" className="navlink-text isactive">Начало</a>
