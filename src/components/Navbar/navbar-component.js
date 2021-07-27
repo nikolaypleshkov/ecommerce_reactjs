@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Sidebar from '../Sidebar/sidebar-components';
 import './Navbar.css'
-
+import './Sidebar.css'
 class Navbar extends Component {
     state = {toggleBurger: false}
     menuState = {toggleMenu: false}
@@ -20,11 +19,12 @@ class Navbar extends Component {
 
 render(){
     let value = this.openMenu();
-    let sidebar = new Sidebar();
+ 
     const{toggleMenu} = this.menuState;
     console.log(value);
-    sidebar.getState(this.openMenu());
+
     return (
+        <> 
         <header>
             <div className="header-container">
                 <div className="items-float-left">
@@ -86,6 +86,39 @@ render(){
             </div>
         </div>
     </header>
+
+<aside className={this.state.showBurger ? 'sidebar translate' : 'sidebar'} id="toggleThat" >
+<div className="navlink-site-container"> 
+  <div className="mb-header">
+      <h1>
+          Меню
+      </h1> 
+      
+  </div>    
+   <hr className="display-none mb-display" />  
+    <ul className="navlinks-site-main">
+        <li className="navlink thover active" >
+            <a href="#" className="navlink-text isactive">Начало</a>
+        </li>
+        <li className="navlink thover">
+            <a href="#" className="navlink-text ">Мъже</a>
+        </li>
+        <li className="navlink thover">
+            <a href="#" className="navlink-text">Жени</a>
+        </li>
+        <li className="navlink thover">
+            <a href="#" className="navlink-text">Деца</a>
+        </li>
+        <li className="navlink thover">
+            <a href="#" className="navlink-text">Марки</a>
+        </li>
+        <li className="navlink sales">
+            <a href="#" className="navlink-text ">Намаления</a>
+        </li>
+    </ul>
+</div>
+</aside>
+</>
     )
   }
 }
