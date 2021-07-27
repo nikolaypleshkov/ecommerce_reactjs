@@ -145,7 +145,7 @@ a{
 }
 
 .mb-menu-btn div{
-    transition: 0.3s ease;
+    transition: 0.9s ease;
 }
 
 .toggle .line1{
@@ -155,7 +155,8 @@ a{
   }
   .toggle .line2{
 
-    transform: translateX(2550px);
+    transform: rotate(90deg);
+    transform: translateX(-125px);
 
   }
 
