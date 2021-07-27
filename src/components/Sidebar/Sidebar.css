@@ -41,9 +41,13 @@
     .sidebar{
         margin-top: -25px;
         height: 100vh;
-        width: 320px;
+        width: 320px;  
+        transform: translateX(-350px);
         background-color: #fff;
         transition: 0.5s ease-in;
+    }
+    .translate{
+        transform: translateX(0px);
     }
     .navlink-site-container{
        height: 100%;
