@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Sidebar from '../Sidebar/sidebar-components';
 import './Navbar.css'
-let isToggled = false;   
 
 class Navbar extends Component {
     state = {toggleBurger: false}
@@ -17,7 +16,6 @@ class Navbar extends Component {
 
     openMenu = () => {
       return this.menuState.toggleMenu;
-      
     }
 
 render(){
