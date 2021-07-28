@@ -149,7 +149,7 @@
     margin-top:470px;
     background-color:#fff;
     z-index: 55;
-    transform: translateY(-500px);
+    transform: translateY(-800px);
     transition: 0.3s ease;
 }
 .col{
