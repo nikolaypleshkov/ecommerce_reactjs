@@ -4,6 +4,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 125px;
+    top: 185px;
     text-align: center;
+    z-index: 50;
 }
