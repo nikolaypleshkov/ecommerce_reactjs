@@ -1,22 +1,21 @@
 .sidebar{
     margin-top: 96px;
     background-color: #111;
-    height: 70px;
-    z-index: 5;
-
+    height: 60px;
+    z-index: 610;
 }
 .navlinks-site-main{
     display: flex;
     list-style: none;
-    font-size: 25px;
+    font-size: 15px;
     margin-left: -39px;
-    height: 71.5px;
+    height: 100%;
     align-items: center;
 }
 .navlink{
     width: 130px;
     text-align: center;
-    height: 67px;   
+    height: 60px;   
 }
 .navlink-text{
     position: absolute;
@@ -31,10 +30,47 @@
 .thover:hover{
     background-color:rgb(253, 169, 11) !important;
     transition: 0.5s ease;
-    color: #fff;
 }
 .active{
     background-color:rgb(253, 169, 11);
+}
+
+@media (max-width:1779px){
+    .dropdown{
+        margin-left: 25px;
+    }
+    .navlink{
+        margin-left: 15px;
+    }
+    .row{
+        margin-left: 55px;
+    }
+
+}
+@media(max-width: 1687px){
+    .dropdown{
+      margin-left: 65px;
+    }
+    .navlink{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 1603px){
+    .dropdown{
+        margin-left: 105px;
+    }
+    .navlink{
+        margin-left: -0px;
+    }
+    .sales{
+        margin-left: -0px;
+    }
+}
+
+@media (max-width: 1400px){
+    .dropdown{
+        top:-313px;
+    }
 }
 
 @media (max-width: 992px){
@@ -45,6 +81,7 @@
         transform: translateX(-350px);
         background-color: #111;
         transition: 0.5s ease-in;
+        position: relative;
     }
     .translate{
         transform: translateX(0px);
@@ -64,6 +101,7 @@
         position: relative;
         border-bottom: 1px solid #fff;
         width: 100%;
+        z-index: 59;
     }
     .navlink-text{
         position: absolute;
@@ -86,6 +124,9 @@
     .mb-display{
         display: block !important;
     }
+    .dropdown{
+        display: none;
+    }
 }
 
 .mb-header{ 
@@ -94,5 +135,71 @@
 .display-none{
     display: none;
 }
+.man{
+    position: absolute;
+    top: -7px;
+    left: 185px;
+    color: rgb(253, 169, 11);
+    z-index: 51;
+}
 
+.dropdown{
+    width: 100%;
+    position: absolute;
+    margin-top:470px;
+    background-color:#fff;
+    z-index: 55;
+    transform: translateY(-500px);
+    transition: 0.3s ease;
+}
+.col{
+    text-align: center;
+    margin-left: 135px;
+}
+.row{
+    margin-top: 25px;
+    margin-left: -355px;
+}
+.dropdwn-ul-elements {
+    list-style: none;
+
+}
+.dropdwn-ul-elements li{
+    text-align:left;
+    margin-top: 10px;
+}
+.dropdown-li a{
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.new-collection a{
+    color: rgb(253, 169, 11) !important;
+    font-weight: 800;
+}
+
+.dropdown-li a:hover{
+    color: rgb(253, 169, 11) !important;
+    margin-left: 5px;
+    transition: 0.2s ease;
+}
+.fl{
+        color: #000 !important;
+}
+
+.fl:hover{
+    color: rgb(253, 169, 11) !important;
+    transition: 0.2s ease;
+
+}
+
+.add-dropdown{
+    transform: translateY(0px);
+    transition: 0.5s ease-in;
+}
+
+.brand-layout{
+    width:40%;
+    margin-left: 185px;
+}
 
