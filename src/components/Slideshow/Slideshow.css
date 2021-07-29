@@ -1,10 +1,19 @@
-.sls-container{
+.carousel-wrapper{
+    display: flex;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    top: 156px;
     left: 0;
-    right: 0;
-    top: 185px;
-    text-align: center;
-    z-index: 50;
-}
+    min-width: 100%;
+  }
+  
+  @media  (max-width: 992px){
+      .carousel-wrapper{
+          top: 95px;
+          height: 300px !important;
+      }
+      .carousel-wrapper img{
+        
+        height: 300px !important;
+    }
+  }
+
