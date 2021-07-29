@@ -15,7 +15,8 @@
 .navlink{
     width: 130px;
     text-align: center;
-    height: 60px;   
+    height: 60px; 
+    margin-left: 10px;  
 }
 .navlink-text{
     position: absolute;
@@ -201,5 +202,18 @@
 .brand-layout{
     width:40%;
     margin-left: 185px;
+}
+
+.wm{
+    transform: translateY(-990px);
+}
+
+.wm2{
+    top: -313px;
+    left: 155px;
+}
+
+.mv{
+    left: 15px;
 }
 
