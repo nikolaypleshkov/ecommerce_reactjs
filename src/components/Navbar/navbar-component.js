@@ -13,6 +13,7 @@ class Navbar extends Component {
     state = {
         toggleBurger: false,
         toggleDropdow: false,
+        toggleDropdow2: false
     }
     
     OnMouseOut = () => { 
@@ -22,10 +23,28 @@ class Navbar extends Component {
     }
 
     OnMouseOver = () => {
-        this.setState({
-            toggleDropdow: !this.state.toggleDropdow
-        })
-        console.log('just hovered the element: '+this.state.toggleDropdow);
+        if(this.state.toggleDropdow2){
+            this.setState({
+                toggleDropdow2: false
+            });
+        }
+ 
+            this.setState({
+                toggleDropdow: !this.state.toggleDropdow
+            });
+     
+    }
+
+    OnMouseOver2 = () => {
+        if(this.state.toggleDropdow){
+            this.setState({
+                toggleDropdow: false
+            });
+        }
+ 
+            this.setState({
+                toggleDropdow2: !this.state.toggleDropdow2
+            });
     }
 
     toggle = () => {
@@ -113,13 +132,13 @@ render(){
   </div>    
    <hr className="display-none mb-display" />  
     <ul className="navlinks-site-main">
-        <li className={!this.state.toggleDropdow ? 'navlink thover active' : 'navlink thover'} >
+        <li className={!this.state.toggleDropdow && !this.state.toggleDropdow2 ? 'navlink thover active ' : 'navlink thover'} >
             <a href="#" className="navlink-text">Начало</a>
         </li>
         <li  className={this.state.toggleDropdow ? 'navlink thover active' : 'navlink thover'} onClick={this.OnMouseOver}  >
             <a href="#d" className="navlink-text " >Мъже</a>
         </li>
-        <div className={this.state.toggleDropdow ? 'dropdown add-dropdown' : 'dropdown'}>
+        <div className={this.state.toggleDropdow ? 'dropdown add-dropdown mv' : 'dropdown'}>
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill man" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
                 <div className="container" >
@@ -250,8 +269,138 @@ render(){
             </div>
         </div>
         
-        <li className="navlink thover">
+        <li className={this.state.toggleDropdow2 ? 'navlink thover active' : 'navlink thover'}  onClick={this.OnMouseOver2} >
             <a href="#" className="navlink-text">Жени</a>
+            <div className={this.state.toggleDropdow2 ? 'dropdown add-dropdown wm2' : 'dropdown wm'}>
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill man" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+                <div className="container" >
+                    <div className="row">
+                        <div className="col">
+                            <h3>Облекло</h3>
+                            <hr />
+                            <ul className="dropdwn-ul-elements">
+                                <li className="dropdown-li new-collection">
+                                    <a href=""  className="ahref">NEW</a>
+                                </li>
+                                <li className="dropdown-li" >
+                                    <a href=""  className="ahref">Блузи</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Панталони</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Анцузи</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Якета</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Суитшърти и горнища</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href="" className="ahref">Тениски и потници</a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <a href="" className="ahref fl">  <p><b>Комбинирай и спести </b></p></a>
+                        </div>
+                        <div className="col">
+                        <h3>Обувки</h3>
+                        <hr />
+                        <ul className="dropdwn-ul-elements">
+                                <li className="dropdown-li new-collection">
+                                    <a href=""  className="ahref">NEW</a>
+                                </li>
+                                <li className="dropdown-li" >
+                                    <a href=""  className="ahref">Ежедневни обувки</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Ботуши</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Сандали</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Спортни обувки</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Туристичeски обувки</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href="" className="ahref">Джапанки</a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <a href="" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
+                        </div>
+                        <div className="col">
+                        <h3>Аксесоари</h3>
+                        <hr />
+                        <ul className="dropdwn-ul-elements">
+                                <li className="dropdown-li new-collection">
+                                    <a href=""  className="ahref">NEW</a>
+                                </li>
+                                <li className="dropdown-li" >
+                                    <a href=""  className="ahref">Раници</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Чанти, сакове, портмонета</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Колани </a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Чорапи</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href=""  className="ahref">Шапки и шалове</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href="" className="ahref">Стелки и връзки</a>
+                                </li>
+                                <li className="dropdown-li">
+                                    <a href="" className="ahref">Препарати за почистване</a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <a href="" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
+                        </div>
+                        <div className="col">
+                        <h3> Марки</h3>
+                        <hr />
+                        <div className="container brand-layout">
+                            <div className="row">
+                                <div className="col">
+                                    <img src={adidas} alt="" />
+                                </div>
+                                <div className="col">
+                                   <img src={nike} alt="" />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col">
+                                    <img src={jordan} alt="" />
+                                </div>
+                                <div className="col">
+                                   <img src={puma} alt="" />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col">
+                                    <img src={reebok} alt="" />
+                                </div>
+                                <div className="col">
+                                   <img src={vans} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <a href="" className="ahref fl"> <p><b>Виж всички марки</b></p> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
             
         </li>
         <li className="navlink thover">
