@@ -316,7 +316,7 @@ render(){
                                     <a href="#everyday-women"  className="ahref">Ежедневни обувки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="#boots-women" className="ahref">  className="ahref">Ботуши</a>
+                                    <a href="#boots-women" className="ahref"> Ботуши</a>
                                 </li>
                                 <li className="dropdown-li">
                                     <a href="#sandals-women"  className="ahref">Сандали</a>
@@ -342,7 +342,7 @@ render(){
                                     <a href="#new-access-women"  className="ahref">NEW</a>
                                 </li>
                                 <li className="dropdown-li" >
-                                    <a href="#bags-women" className="ahref">  className="ahref">Раници</a>
+                                    <a href="#bags-women" className="ahref">Раници</a>
                                 </li>
                                 <li className="dropdown-li">
                                     <a href="#morebags-women"  className="ahref">Чанти, сакове, портмонета</a>
