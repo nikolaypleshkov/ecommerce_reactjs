@@ -133,10 +133,10 @@ render(){
    <hr className="display-none mb-display" />  
     <ul className="navlinks-site-main">
         <li className={!this.state.toggleDropdow && !this.state.toggleDropdow2 ? 'navlink thover active ' : 'navlink thover'} >
-            <a href="#" className="navlink-text">Начало</a>
+            <a href="#home" className="navlink-text">Начало</a>
         </li>
         <li  className={this.state.toggleDropdow ? 'navlink thover active' : 'navlink thover'} onClick={this.OnMouseOver}  >
-            <a href="#d" className="navlink-text " >Мъже</a>
+            <a href="#men" className="navlink-text " >Мъже</a>
         </li>
         <div className={this.state.toggleDropdow ? 'dropdown add-dropdown mv' : 'dropdown'}>
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill man" viewBox="0 0 16 16">
@@ -148,90 +148,90 @@ render(){
                             <hr />
                             <ul className="dropdwn-ul-elements">
                                 <li className="dropdown-li new-collection">
-                                    <a href=""  className="ahref">NEW</a>
+                                    <a href="#new"  className="ahref">NEW</a>
                                 </li>
                                 <li className="dropdown-li" >
-                                    <a href=""  className="ahref">Блузи</a>
+                                    <a href="#shirts"  className="ahref">Блузи</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Панталони</a>
+                                    <a href="#jeans"  className="ahref">Панталони</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Анцузи</a>
+                                    <a href="#sport"  className="ahref">Анцузи</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Якета</a>
+                                    <a href="#jackets"  className="ahref">Якета</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Суитшърти и горнища</a>
+                                    <a href="#sweatshirts"  className="ahref">Суитшърти и горнища</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Тениски и потници</a>
+                                    <a href="#tshirtandtanks" className="ahref">Тениски и потници</a>
                                 </li>
                             </ul>
                             <hr />
-                            <a href="" className="ahref fl">  <p><b>Комбинирай и спести </b></p></a>
+                            <a href="#savemoney" className="ahref fl">  <p><b>Комбинирай и спести </b></p></a>
                         </div>
                         <div className="col">
                         <h3>Обувки</h3>
                         <hr />
                         <ul className="dropdwn-ul-elements">
                                 <li className="dropdown-li new-collection">
-                                    <a href=""  className="ahref">NEW</a>
+                                    <a href="#new-shoes"  className="ahref">NEW</a>
                                 </li>
                                 <li className="dropdown-li" >
-                                    <a href=""  className="ahref">Ежедневни обувки</a>
+                                    <a href="#everyday"  className="ahref">Ежедневни обувки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Ботуши</a>
+                                    <a href="#boots"  className="ahref">Ботуши</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Сандали</a>
+                                    <a href="#sandals"  className="ahref">Сандали</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Спортни обувки</a>
+                                    <a href="#sport-shoes"  className="ahref">Спортни обувки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Туристичeски обувки</a>
+                                    <a href="#tours"  className="ahref">Туристичeски обувки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Джапанки</a>
+                                    <a href="#flipflops" className="ahref">Джапанки</a>
                                 </li>
                             </ul>
                             <hr />
-                            <a href="" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
+                            <a href="#lastitems" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
                         </div>
                         <div className="col">
                         <h3>Аксесоари</h3>
                         <hr />
                         <ul className="dropdwn-ul-elements">
                                 <li className="dropdown-li new-collection">
-                                    <a href=""  className="ahref">NEW</a>
+                                    <a href="#new-access"  className="ahref">NEW</a>
                                 </li>
                                 <li className="dropdown-li" >
-                                    <a href=""  className="ahref">Раници</a>
+                                    <a href="#bags"  className="ahref">Раници</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Чанти, сакове, портмонета</a>
+                                    <a href="#morebags"  className="ahref">Чанти, сакове, портмонета</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Колани </a>
+                                    <a href="#belt"  className="ahref">Колани</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Чорапи</a>
+                                    <a href="#socks"  className="ahref">Чорапи</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Шапки и шалове</a>
+                                    <a href="#hats"  className="ahref">Шапки и шалове</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Стелки и връзки</a>
+                                    <a href="#tips" className="ahref">Стелки и връзки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Препарати за почистване</a>
+                                    <a href="#clean" className="ahref">Препарати за почистване</a>
                                 </li>
                             </ul>
                             <hr />
-                            <a href="" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
+                            <a href="#lastitems-shoes" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
                         </div>
                         <div className="col">
                         <h3> Марки</h3>
@@ -263,14 +263,14 @@ render(){
                             </div>
                         </div>
                         <hr />
-                        <a href="" className="ahref fl"> <p><b>Виж всички марки</b></p> </a>
+                        <a href="#allbrands" className="ahref fl"> <p><b>Виж всички марки</b></p> </a>
                     </div>
                 </div>
             </div>
         </div>
         
         <li className={this.state.toggleDropdow2 ? 'navlink thover active' : 'navlink thover'}  onClick={this.OnMouseOver2} >
-            <a href="#" className="navlink-text">Жени</a>
+            <a href="#women" className="navlink-text">Жени</a>
             <div className={this.state.toggleDropdow2 ? 'dropdown add-dropdown wm2' : 'dropdown wm'}>
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill man" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
@@ -281,90 +281,90 @@ render(){
                             <hr />
                             <ul className="dropdwn-ul-elements">
                                 <li className="dropdown-li new-collection">
-                                    <a href=""  className="ahref">NEW</a>
+                                    <a href="#new-women"  className="ahref">NEW</a>
                                 </li>
                                 <li className="dropdown-li" >
-                                    <a href=""  className="ahref">Блузи</a>
+                                    <a href="#shirts-women"  className="ahref">Блузи</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Панталони</a>
+                                    <a href="jeans-women"  className="ahref">Панталони</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Анцузи</a>
+                                    <a href="#sport-women"  className="ahref">Анцузи</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Якета</a>
+                                    <a href="jackets-women"  className="ahref">Якета</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Суитшърти и горнища</a>
+                                    <a href="#seatshirts-women"  className="ahref">Суитшърти и горнища</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Тениски и потници</a>
+                                    <a href="#tshirtsandtanks-women" className="ahref">Тениски и потници</a>
                                 </li>
                             </ul>
                             <hr />
-                            <a href="" className="ahref fl">  <p><b>Комбинирай и спести </b></p></a>
+                            <a href="#savemoney-women"  className="ahref fl">  <p><b>Комбинирай и спести </b></p></a>
                         </div>
                         <div className="col">
                         <h3>Обувки</h3>
                         <hr />
                         <ul className="dropdwn-ul-elements">
                                 <li className="dropdown-li new-collection">
-                                    <a href=""  className="ahref">NEW</a>
+                                    <a href="#new-shoes-women"  className="ahref">NEW</a>
                                 </li>
                                 <li className="dropdown-li" >
-                                    <a href=""  className="ahref">Ежедневни обувки</a>
+                                    <a href="#everyday-women"  className="ahref">Ежедневни обувки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Ботуши</a>
+                                    <a href="#boots-women" className="ahref">  className="ahref">Ботуши</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Сандали</a>
+                                    <a href="#sandals-women"  className="ahref">Сандали</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Спортни обувки</a>
+                                    <a href="#sport-shoes-women"  className="ahref">Спортни обувки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Туристичeски обувки</a>
+                                    <a href="#tours-women"  className="ahref">Туристичeски обувки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Джапанки</a>
+                                    <a href="#fliplops-women" className="ahref">Джапанки</a>
                                 </li>
                             </ul>
                             <hr />
-                            <a href="" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
+                            <a href="#lastitems-women" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
                         </div>
                         <div className="col">
                         <h3>Аксесоари</h3>
                         <hr />
                         <ul className="dropdwn-ul-elements">
                                 <li className="dropdown-li new-collection">
-                                    <a href=""  className="ahref">NEW</a>
+                                    <a href="#new-access-women"  className="ahref">NEW</a>
                                 </li>
                                 <li className="dropdown-li" >
-                                    <a href=""  className="ahref">Раници</a>
+                                    <a href="#bags-women" className="ahref">  className="ahref">Раници</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Чанти, сакове, портмонета</a>
+                                    <a href="#morebags-women"  className="ahref">Чанти, сакове, портмонета</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Колани </a>
+                                    <a href="#belt-women"  className="ahref">Колани </a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Чорапи</a>
+                                    <a href="#socks-women"  className="ahref">Чорапи</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href=""  className="ahref">Шапки и шалове</a>
+                                    <a href="#hats-women"  className="ahref">Шапки и шалове</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Стелки и връзки</a>
+                                    <a href="#tips-women" className="ahref">Стелки и връзки</a>
                                 </li>
                                 <li className="dropdown-li">
-                                    <a href="" className="ahref">Препарати за почистване</a>
+                                    <a href="#clean-women" className="ahref">Препарати за почистване</a>
                                 </li>
                             </ul>
                             <hr />
-                            <a href="" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
+                            <a href="#lastitems-women" className="ahref fl"> <p><b>Купи последни бройки</b></p> </a>
                         </div>
                         <div className="col">
                         <h3> Марки</h3>
@@ -396,7 +396,7 @@ render(){
                             </div>
                         </div>
                         <hr />
-                        <a href="" className="ahref fl"> <p><b>Виж всички марки</b></p> </a>
+                        <a href="#allbrands-women" className="ahref fl"> <p><b>Виж всички марки</b></p> </a>
                     </div>
                 </div>
             </div>
@@ -404,13 +404,13 @@ render(){
             
         </li>
         <li className="navlink thover">
-            <a href="#" className="navlink-text">Деца</a>
+            <a href="#kinder" className="navlink-text">Деца</a>
         </li>
         <li className="navlink thover">
-            <a href="#" className="navlink-text">Марки</a>
+            <a href="#brands" className="navlink-text">Марки</a>
         </li>
         <li className="navlink sales">
-            <a href="#" className="navlink-text ">Намаления</a>
+            <a href="#sales" className="navlink-text ">Намаления</a>
         </li>
     </ul>
 </div>
